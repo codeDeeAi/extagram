@@ -1,6 +1,4 @@
 # extagram
 African Developers Group Project
 
-This is the master branch where all the working codes are reviewed and deployed 
-
-Note: do not push or upload her unless authorized
+This is the where all the recent developments and changes are pushed to 
