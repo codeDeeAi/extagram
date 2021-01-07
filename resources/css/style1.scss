@@ -1,0 +1,250 @@
+/*  url for Joesfin Sans font please do not remove*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/*  url for Poppins font please do not remove*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// color variables
+$bg: #212127;
+$white:#ffeeff;
+$red-light:rgb(133, 104, 211);
+$red:rgb(107, 65, 224);
+$grey:rgb(175, 172, 172);
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+}
+button{
+    cursor: pointer;
+}
+
+body{
+    color: #ffeeff;
+}
+.nav{
+    width: 100%;
+    height: 60px !important;
+    // background: $color-900;
+    display: flex;
+    padding-left: 1em;
+    align-items:baseline;
+    justify-content: center;
+    .logo{
+       max-height:125px;
+       max-width:125px;
+       margin: 0%;
+
+    }
+   
+
+    ul.navbar{
+        display: flex;
+        width: 100%;
+        //  padding: 1em;
+         align-items:center;
+         justify-content: center;
+        height:100%;
+       
+        li.nav-item{
+            position: relative;
+            overflow: hidden;
+            list-style: none;
+            a{
+                text-decoration: none;
+                font-family: "Poppins";
+                font-size: 1em;
+                font-weight: 400;
+                color: rgb(37, 37, 37);
+                margin: 0 .9em;
+                
+            }
+        
+        }
+        li::before{
+            content: "";
+            height: 2px;
+            position: absolute;
+            right: 100%;
+            background: $red;
+            top: 100%;
+            width: 100%;
+            transition: all .7s ease;
+        }
+        li:hover li::before{
+            right: 0%;
+        }
+    }
+  
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url('../img/drawing.svg');
+    background-size: cover;
+    .content{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    // gap: 20px;
+    flex-direction: column;
+
+        h1{
+            color: $bg;
+            font-family: "Josefin Sans";
+            font-size: 5em;
+            text-align: center;
+            margin-top:3em;
+            margin: 0;
+            font-weight: 800;
+            line-height: 0;
+            transform: translateY(-1em);
+            span{
+                color: $red;
+            }
+        }
+        p{
+            color: #19191ac5;
+            font-size: 1.4em;
+            font-family: "Poppins";
+            text-align: left;
+            // font-weight: 800;
+            // transform: translateY(-1em);
+            b{
+                color: $red;
+            }
+        }
+      .btn-group{
+          display: flex;
+          align-items: baseline;
+          justify-content: flex-start;
+          margin-top: 1em;
+        a{
+            height: auto;
+            width: 15em;
+            padding: 1em;
+            margin: 2em 1em;
+            border: none;
+            outline: none;
+            border-radius: 45px;
+            background-color: #212127;
+            text-align: center;
+          
+            color: #ffeeff;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-family: "Poppins";
+
+           
+      }
+      .login{
+          background-color: $red;
+      }
+
+        }
+    }
+  
+}a{
+    text-decoration: none;
+}
+
+// =======================signup===============================
+.signup-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    .intro-img img, .intro-content,.intro-img{
+        height: 100%;
+        width: 100%;
+
+    }
+    .intro-img{
+        background: #ffffff;
+    }
+    .intro-content{
+        background: $red-light;
+        position: relative;
+        .form{
+            margin: 1.5em;
+            position: absolute;
+            height: fit-content;
+            transform: translateX(-200px);
+            width: 410px;
+            padding: 1em 0;
+            display: flex;
+            flex-direction: column;
+
+            border-radius: 10px;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            box-shadow: 3px 3px 7px rgba($color: #918989, $alpha: .7),-3px -3px 7px rgba($color: #918989, $alpha: .7);
+            .control{
+                height: 75px;
+                // margin: 1em;
+                input{
+                    height: 3em;
+            background-color: #ffffff;
+            font-family: "Poppins";font-size: 1.1em;
+                    width: 20em;
+                    margin: auto;
+                    border-radius: 10px;
+                    border: none;
+                    outline: none;
+                    padding: .6em;
+                    box-shadow:inset 2px 2px 15px rgba($color: #ffffff, $alpha: 0.8),inset -2px -2px 6px rgba($color: #978c8c, $alpha: 0.7);
+                }
+               
+            }
+            a{
+                padding: .6em;
+                width: fit-content;
+                text-align: center;
+                height: fit-content;
+                font-size: 1.2em;
+                outline: none;
+                border: none;
+                font-family: "Poppins";
+                border-radius: 15px;
+                background-color: $red-light;
+                color: white;
+                margin: .9em;
+            }
+            h1{
+                font-family: "Josefin Sans";
+                font-size: 3em;
+                margin: .7em;
+                color: #212127;
+            }
+        }
+    }
+}
+#login-form{
+    width: 480px;
+    transform: translateY(10px) translateX(-200px);
+    a{
+        width: 150px;
+    }
+    .control{
+        margin: 1em;
+    
+    input{
+        // padding: 2em;
+        font-size: 1.3em;
+       
+       }   }
+       .password-renew{
+           font-size: 1em;
+           font-family: "Poppins";
+           color: #918989;
+           display: block;
+           margin: .2em;
+           background: none;
+           padding: 0;
+       }
+}

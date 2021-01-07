@@ -1,0 +1,279 @@
+/*  url for Joesfin Sans font please do not remove*/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+/*  url for Poppins font please do not remove*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  color: #ffeeff;
+}
+
+.nav {
+  width: 100%;
+  height: 60px !important;
+  display: flex;
+  padding-left: 1em;
+  align-items: baseline;
+  justify-content: center;
+}
+.nav .logo {
+  max-height: 125px;
+  max-width: 125px;
+  margin: 0%;
+}
+.nav ul.navbar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.nav ul.navbar li.nav-item {
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+}
+.nav ul.navbar li.nav-item a {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-size: 1em;
+  font-weight: 400;
+  color: #252525;
+  margin: 0 0.9em;
+}
+.nav ul.navbar li::before {
+  content: "";
+  height: 2px;
+  position: absolute;
+  right: 100%;
+  background: #6b41e0;
+  top: 100%;
+  width: 100%;
+  transition: all 0.7s ease;
+}
+.nav ul.navbar li:hover li::before {
+  right: 0%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: url("../img/drawing.svg");
+  background-size: cover;
+}
+.container .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+.container .content h1 {
+  color: #212127;
+  font-family: "Josefin Sans";
+  font-size: 5em;
+  text-align: center;
+  margin-top: 3em;
+  margin: 0;
+  font-weight: 800;
+  line-height: 0;
+  transform: translateY(-1em);
+}
+.container .content h1 span {
+  color: #6b41e0;
+}
+.container .content p {
+  color: #19191ac5;
+  font-size: 1.4em;
+  font-family: "Poppins";
+  text-align: left;
+}
+.container .content p b {
+  color: #6b41e0;
+}
+.container .content .btn-group {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  margin-top: 1em;
+}
+.container .content .btn-group a {
+  height: auto;
+  width: 15em;
+  padding: 1em;
+  margin: 2em 1em;
+  border: none;
+  outline: none;
+  border-radius: 45px;
+  background-color: #212127;
+  text-align: center;
+  color: #ffeeff;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-family: "Poppins";
+}
+.container .content .btn-group .login {
+  background-color: #6b41e0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.signup-container .intro-img img, .signup-container .intro-content, .signup-container .intro-img {
+  height: 100%;
+  width: 100%;
+}
+.signup-container .intro-img {
+  background: #ffffff;
+}
+.signup-container .intro-content {
+  background: #8568d3;
+  position: relative;
+}
+.signup-container .intro-content .form {
+  margin: 1.5em;
+  position: absolute;
+  height: fit-content;
+  transform: translateX(-200px);
+  width: 410px;
+  padding: 1em 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  box-shadow: 3px 3px 7px rgba(145, 137, 137, 0.7), -3px -3px 7px rgba(145, 137, 137, 0.7);
+}
+.signup-container .intro-content .form .control {
+  height: 75px;
+}
+.signup-container .intro-content .form .control input {
+  height: 3em;
+  background-color: #ffffff;
+  font-family: "Poppins";
+  font-size: 1.1em;
+  width: 20em;
+  margin: auto;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 0.6em;
+  box-shadow: inset 2px 2px 15px rgba(255, 255, 255, 0.8), inset -2px -2px 6px rgba(151, 140, 140, 0.7);
+}
+.signup-container .intro-content .form a {
+  padding: 0.6em;
+  width: fit-content;
+  text-align: center;
+  height: fit-content;
+  font-size: 1.2em;
+  outline: none;
+  border: none;
+  font-family: "Poppins";
+  border-radius: 15px;
+  background-color: #8568d3;
+  color: white;
+  margin: 0.9em;
+}
+.signup-container .intro-content .form h1 {
+  font-family: "Josefin Sans";
+  font-size: 3em;
+  margin: 0.7em;
+  color: #212127;
+}
+
+#login-form {
+  width: 480px;
+  transform: translateY(10px) translateX(-200px);
+}
+#login-form a {
+  width: 150px;
+}
+#login-form .control {
+  margin: 1em;
+}
+#login-form .control input {
+  font-size: 1.3em;
+}
+#login-form .password-renew {
+  font-size: 1em;
+  font-family: "Poppins";
+  color: #918989;
+  display: block;
+  margin: 0.2em;
+  background: none;
+  padding: 0;
+}
+.res{
+  width: fit-content;
+  margin-top: 40px;
+}
+#login-f{
+  width: 480px;
+  transform: translateY(10px) translateX(-200px);
+  margin-top: 20%;
+  
+}
+#login-f a {
+  width: 150px;
+}
+#login-f .control {
+  margin: 1em;
+}
+#login-f.control input {
+  font-size: 1.3em;
+}
+#login-f .password-renew {
+  font-size: 1em;
+  font-family: "Poppins";
+  color: #918989;
+  display: block;
+  margin: 0.2em;
+  background: none;
+  padding: 0;
+}
+
+.form p {
+  color: black;
+  margin-bottom: 12px;
+}
+h5{
+  color: black;
+  font-weight: 1000;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+select{
+  
+    height: 3em;
+    background-color: #ffffff;
+    font-family: "Poppins";
+    font-size: 1.1em;
+    width: 20em;
+    margin: auto;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 0.6em;
+    box-shadow: 
+}
